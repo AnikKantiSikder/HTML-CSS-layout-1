@@ -69,8 +69,20 @@
         display: grid;
         grid-template-columns: 125px 200px 125px;
         grid-template-rows: 250px 100px;
-        /* Aligning tracks inside container into empty spaces */
-        
+        gap: 50px;
+        /* Aligning tracks inside container into empty
+         spaces */
+        /* justify-content: space-between; */
+        justify-content: center;
+        align-content: center;
+        /* Aligning items inside cells:moving
+        items around inside cells */
+        align-items: end;
+        justify-items: end;
+      }
+      .el--3{
+        align-self: center;
+        justify-self: center;
       }
     </style>
   </head>
