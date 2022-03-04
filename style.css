@@ -123,7 +123,7 @@ footer p{
 /* styling links */
 a:link{
     color: #1098ad;
-    padding: 10px;
+    /* padding: 10px; */
     text-decoration: none;
 }
 a:visited{
@@ -155,7 +155,7 @@ button{
 }
 
 /* CSS FLOATS */
-.author-img{
+/* .author-img{
     float: left;
     margin-bottom: 20px;
 }
@@ -171,23 +171,67 @@ nav{
     float:right;
     margin-top: 10px;
 }
-/* clearing the floats */
 .clear{
     clear: both;
 }
- /*Using the floats building layout  */
- .article{
-    /* background-color: red; */
+.article{
     width: 825px;
     float:left;
- }
- .related-post{
-     /* background-color: green; */
+}
+.related-post{
+    
      width: 300px;
      float: right;
- }
-
- footer{
-     /* background-color: gray; */
+}
+footer{
      clear: both;
- }
+} */
+
+/* FLEXBOX */
+.main-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.author-box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.author{
+    margin-bottom: 0;
+    margin-left: 15px;
+}
+
+.related-post-child{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+.related-link:link{
+    font-size: 17px;
+    font-weight: bold;
+    font-style: normal;
+    display: block;
+}
+.related-author{
+    margin-bottom: 0;
+    font-size: 14px;
+    font-style: italic; 
+}
+
+.row{
+    display: flex;
+    align-items: flex-start;
+    gap: 75px;
+    margin-bottom: 60px;
+}
+.article{
+    flex: 1;
+    margin-bottom: 0;
+}
+.related-post{
+    flex: 0 0 300px;
+
+}
